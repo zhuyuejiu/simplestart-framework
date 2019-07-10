@@ -33,25 +33,32 @@
 				<artifactId>jsp-api</artifactId>
 				<version>${jsp-api.version}</version>
 			</dependency>
-			
-			<dependency>
-				<groupId>org.apache.logging.log4j</groupId>
-				<artifactId>log4j-core</artifactId>
-				<version>${lo4j-core.version}</version>
-			</dependency>
-			
+
+
+
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
 			</dependency>
-			
 		</dependencies>
-		
+
 	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${lo4j-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${lo4j-core.version}</version>
+		</dependency>
+	</dependencies>
 	<build>
-	  
-<!-- 	    <directory>../simplestartframework-parent/target</directory> -->
+
+		<!-- <directory>../simplestartframework-parent/target</directory> -->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -68,7 +75,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
-				 <skipTests>true</skipTests>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>

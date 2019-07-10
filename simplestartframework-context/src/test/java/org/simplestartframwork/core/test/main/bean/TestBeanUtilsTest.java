@@ -6,7 +6,7 @@ import org.simplestartframwork.core.test.config.BeanConfig;
 
 public class TestBeanUtilsTest {
 	
-	
+	@Test
 	public void bean(){
 		try {
 			AnntationContextManager context=new AnntationContextManager(BeanConfig.class);

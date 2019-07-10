@@ -13,7 +13,7 @@ import org.simplestartframwork.context.annotation.component.Universal;
 
 public class ReflectAnnotationUtils {
 	// 1.创建一个Log4j的操作对象
-	private static final Logger LOG = LogManager.getLogger(ReflectAnnotationUtils.class.getName());
+	private static final Logger LOGGER = LogManager.getLogger(ReflectAnnotationUtils.class.getName());
 
 	/**
 	 * <pre>
